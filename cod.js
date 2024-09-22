@@ -18,7 +18,7 @@ $(document).ready(function() {
             {
                 extend: 'pdf',
                 text: 'Exportar a PDF',
-                title: 'SAE - SISTEMA DE ADMINISTRACION E-CART ' + new Date().toLocaleString(),
+                title: 'List of users, date: ' + new Date().toLocaleString(),
                 filename: 'Listado de empleados',
                 customize: function(doc) {
                     doc.content.splice(0, 0, {
@@ -34,7 +34,7 @@ $(document).ready(function() {
             {
                 extend: 'print',
                 text: 'Imprimir',
-                title: 'SAE - Listado de Marcas'
+                title: 'List of users'
             }
         ],
         language: {
